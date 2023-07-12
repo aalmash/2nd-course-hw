@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .top {
+        display: flex;
+        height: 735px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-header {
+        padding-top: 238px;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .top-description {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .games {
+        grid-template-columns: repeat(4, 1fr);
+        height: 965px;
+        padding-bottom: 128px;
+
+    }
+
+
+
+}
