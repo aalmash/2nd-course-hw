@@ -3,7 +3,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-    
+
     .top {
         display: flex;
         height: 735px;
@@ -24,6 +24,7 @@
         text-align: center;
         padding-bottom: 32px;
     }
+
     .games {
         grid-template-columns: repeat(4, 1fr);
         height: 965px;
@@ -31,6 +32,25 @@
 
     }
 
+    .game-seasons {
+        height: 653px;
+    }
 
+    .seasons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 64px;
+    }
 
+    .seasons-header {
+        padding-top: 51px;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .seasons-descripton {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
