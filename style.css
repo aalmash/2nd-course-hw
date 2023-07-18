@@ -129,7 +129,7 @@ body {
   color: #ffffff;
 }
 .seasons-image {
-  max-width: 485px;
+  width: 485px;
 }
 
 @media (max-width: 767px) {
