@@ -28,38 +28,22 @@ let monthNumber = Number(prompt('Введите номер месяца'));
 
 switch (monthNumber) {
     case 12:
-        console.log('Сезон "Зима"');
-        break;
     case 1:
-        console.log('Сезон "Зима"');
-        break;
     case 2:
         console.log('Сезон "Зима"');
         break;
     case 3:
-        console.log('Сезон "Весна"');
-        break;
     case 4:
-        console.log('Сезон "Весна"');
-        break;
-    case 5:
+    case 5:    
         console.log('Сезон "Весна"');
         break;
     case 6:
-        console.log('Сезон "Лето"');
-        break;
     case 7:
-        console.log('Сезон "Лето"');
-        break;
     case 8:
         console.log('Сезон "Лето"');
         break;
     case 9:
-        console.log('Сезон "Осень"');
-        break;
     case 10:
-        console.log('Сезон "Осень"');
-        break;
     case 11:
         console.log('Сезон "Осень"');
         break;
