@@ -53,6 +53,9 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    &:hover {
+        background: #EB443F;
+    }
 }
 
 .games {
@@ -70,6 +73,9 @@ body {
     border-radius: 17px;
     background-size: cover;
     position: relative;
+    &:hover {
+        border: 3px solid #44D2FF;
+    }
 }
 
 .game-name {
@@ -119,7 +125,7 @@ body {
         color: #ffffff;
     }
     &-image {
-        max-width: 485px;
+        max-width: 100%
     }
 }
 
