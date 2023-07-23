@@ -41,7 +41,7 @@ let num =0;
 while (numberN >= 50) {
     numberN = numberN / 2;
     num++;
-} console.log(`Итераций ${num}`);
+} console.log(`Итераций ${num}, получен число ${numberN}`);
 
 
 
@@ -50,6 +50,5 @@ while (numberN >= 50) {
 let friday = 3;
 do {
     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
-    friday = friday + 6;
-    friday++;
+    friday += 6;
 } while(friday <= 31);
