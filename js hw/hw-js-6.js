@@ -17,11 +17,17 @@ numb = numb.join(' ');
 console.log(numb);
 
 // Ex. 4
-let numbs1 = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
+let arr = [];
+
+for (let i = 0; i < 3; i++) {
+	arr[i] = [];
+	
+	for (let j = 0; j < 3; j++) {
+		arr[i].push(1);
+	}
+}
+
+console.log(arr);
 
 // Ex. 5
 const numbs2 = [1, 1, 1];
@@ -57,19 +63,14 @@ arrayLine = arrayLine.join('');
 console.log(arrayLine);
 
 // Ex. 9 
-let numbs5 =[
-    [1, 2, 3],
-    [4, 5, 6],
-];
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
 
-let numb1 = [1, 2, 3];
-let numb2 = [4, 5, 6];
-
-let numbsJoin = [...numb1,...numb2];
-console.log(numbsJoin);
+let arr3 = arr1.concat(arr2);
+console.log(arr3);
 
 // Ex. 10
-const numbs6 =[2, 5, 4, 8, 7, 3];
+const numbs6 = [2, 5, 4, 8, 7, 3];
 
 let result2 = 0;
 for (let i = 0; i < numbs6.length - 1; i++) {
