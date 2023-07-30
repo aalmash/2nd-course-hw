@@ -9,52 +9,40 @@ let moreLess = (a, b) => {
 console.log(moreLess(5, 8));
 
 // exercise 2
-function evenOdd(userNumber) {
-    return userNumber;
+let evenOdd = (a) => {
+    if (a % 2 === 0) {
+        return 'Число четное';
+    } else {
+        return 'Число нечетное';
+    }
 }
-let userNumber = prompt('Введите число');
-if (userNumber % 2 === 0) {
-    console.log('Число четное');
-} else {
-    console.log('Число нечетное');
-}
+console.log(evenOdd(7));
 
 // exercise 3.1
-function square() {
-    let userSquare = prompt('Введите число');
-    let resultSquare = userSquare ** 2;
-    console.log(`Квадрат этого числа ${resultSquare}`);
+const square = (a) => {
+    console.log(a * a);
 }
-square();
+square(4);
 
 // exercise 3.2
-function square2() {
-    let userSquare2 = prompt('Введите число');
-    return  alert(`Квадрат этого числа ${userSquare2 ** 2}`);
+const square1 = (a) => {
+    return a ** 2;
 }
-square2();
+console.log(square1(4));
 
 // exercise 4
-"use strict";
-let age = prompt("Сколько Вам лет?");
-
-let printMessage;
-
-if (age < 0) {
-    printMessage = function () {
+function age() {
+    let userAge = prompt("Сколько Вам лет?");
+    
+    if (userAge < 0) {
         alert('Вы ввели неправильное значение');
-    }
-} if (age < 12) {
-    printMessage = function () {
+    } else if (userAge <= 12) {
         alert("Привет, друг!");
-    }
-} else {
-    printMessage = function () {
+    } else {
         alert("Добро пожаловать!");
     }
 }
-
-printMessage();
+age();
 
 // exercise 5
 function check (a, b) {
@@ -67,7 +55,7 @@ function check (a, b) {
 console.log(check(6,8));
 
 // exercise 6
-let isNumber = (userIsNumber = prompt(('Введите число'))) => {
+let isNumber = (userIsNumber = prompt('Введите число')) => {
     if (isNaN(userIsNumber)) {
         return alert('Переданный параметр не является числом');
     } else {
