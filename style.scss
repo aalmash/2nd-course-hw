@@ -53,6 +53,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+
     &:hover {
         background: #EB443F;
     }
@@ -73,6 +74,7 @@ body {
     border-radius: 17px;
     background-size: cover;
     position: relative;
+
     &:hover {
         border: 3px solid #44D2FF;
     }
@@ -85,15 +87,18 @@ body {
     color: #ffffff;
     text-decoration: none;
     position: absolute;
-    bottom: 32px; left: 32px;
+    bottom: 32px;
+    left: 32px;
 }
 
 .game-1 {
     background-image: url(img/game1.png);
 }
+
 .game-2 {
     background-image: url(img/game2.png);
 }
+
 .game-3 {
     background-image: url(img/game3.png);
 }
@@ -107,15 +112,37 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+.game-words {
+    height: 800px;
+    background-color: #000915;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-puzzles {
+    height: 524px;
+    background-image: url(img/puzzleGameBACK.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 276px;
+}
+
 .seasons {
     max-width: 584px;
-    
+
     &-header {
         font-weight: 700;
         font-size: 48px;
         line-height: 58px;
         color: #ffffff;
     }
+
     &-descripton {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -124,8 +151,41 @@ body {
         line-height: 32px;
         color: #ffffff;
     }
+
     &-image {
         width: 485px;
+    }
+}
+
+.puzzle {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &-descripton {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+.footer {
+    height: 80px;
+    background-color: #000915;
+
+    &-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 32px
     }
 }
 

@@ -111,6 +111,26 @@ body {
   justify-content: space-between;
 }
 
+.game-words {
+  height: 800px;
+  background-color: #000915;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-puzzles {
+  height: 524px;
+  background-image: url(img/puzzleGameBACK.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 276px;
+}
+
 .seasons {
   max-width: 584px;
 }
@@ -130,6 +150,36 @@ body {
 }
 .seasons-image {
   width: 485px;
+}
+
+.puzzle {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.puzzle-descripton {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer {
+  height: 80px;
+  background-color: #000915;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 32px;
 }
 
 @media (max-width: 767px) {
@@ -162,6 +212,17 @@ body {
   }
   .game-seasons {
     height: 653px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-words {
+    height: 653px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-puzzles {
+    height: 749px;
+    padding-top: 51px;
   }
   .seasons {
     display: flex;
@@ -180,7 +241,7 @@ body {
     text-align: center;
   }
   .seasons-image {
-    width: 100%;
+    width: 344px;
     display: block;
     margin: 0 auto;
     padding-bottom: 85px;
